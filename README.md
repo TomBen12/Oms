@@ -11,7 +11,7 @@ App still doesnt prevent users from creating multiple customers and users witht 
 assigns individual ids and increments them
 
 ## Serve
-Run `ng serve` for client side to run, and `dotnet watch` in the api folder to launch server side client
+Run `npm i --legacy-peer-deps` then `ng serve` for client side to run, then `dotnet watch` in the api folder to launch server side client
 
 ## Versions
  - Angular CLI: 15.0.4
