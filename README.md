@@ -1,7 +1,7 @@
 # OrderManagementSystem
 
-This is the frontend side of the order management system. The order management system allows users to create customers and orders for those customers, and then display 
-this information in tables. User creation also has basic validation
+The order management system allows users to create customers and orders for those customers, and then display 
+this information in tables. User creation also has basic validation data is saved in-memory.
 
 ##Notes
 If console throws CORS error, refresh page and clear cache by holding shift and clicking refresh page in chrome
@@ -25,5 +25,6 @@ Run `ng serve` for client side to run, and `dotnet watch` in the api folder to l
 - If console shows cors error, clear cache and refresh page
 
 - when deleting orders, page doesnt refresh unless you click out of it then back to it
+
 
 
