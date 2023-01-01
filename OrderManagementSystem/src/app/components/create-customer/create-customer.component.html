@@ -1,0 +1,47 @@
+<div class="modal-header">
+  <h5 class="modal-title" id="exampleModalLabel">Create Customer</h5>
+  <button
+    type="button"
+    class="btn-close"
+    aria-label="Close"
+    (click)="modalRef.close()"
+  ></button>
+</div>
+<div class="modal-body">
+  <div class="container">
+    <div class="row">
+      <div class="col-md">
+        <mdb-form-control>
+          <input mdbInput type="text" [(ngModel)]="newCustomer.email" id="name" name="name" class="form-control" />
+          <label mdbLabel class="form-label" for="name">Email</label>
+        </mdb-form-control>
+      </div>
+    </div>
+    <div class="row" style="padding-top: 30px">
+      <div class="col-md">
+        <mdb-form-control>
+          <input mdbInput type="text" id="firstname" class="form-control"  [(ngModel)]="newCustomer.firstname"/>
+          <label mdbLabel class="form-label" for="firstname">First Name</label>
+        </mdb-form-control>
+      </div>
+      <div class="col-md">
+        <mdb-form-control>
+          <input mdbInput type="text" id="lastname" class="form-control"  [(ngModel)]="newCustomer.lastname"/>
+          <label mdbLabel class="form-label" for="lastname">Last Name</label>
+        </mdb-form-control>
+      </div>
+    </div>
+    <div class="row" style="padding-top: 30px">
+      <div class="col-md-8">
+        <p *ngIf="showError" style="color: red">Missing Fields</p>
+      </div>
+    </div>
+  </div>
+
+</div>
+<div class="modal-footer">
+  <button type="button" class="btn btn-secondary" (click)="cancel()">
+    Cancel
+  </button>
+  <button type="button" class="btn btn-primary" (click)="save()">Create Customer</button>
+</div>

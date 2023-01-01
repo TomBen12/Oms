@@ -1,0 +1,64 @@
+<div class="modal-header">
+  <h5 class="modal-title" id="exampleModalLabel">Create User</h5>
+  <button
+    type="button"
+    class="btn-close"
+    aria-label="Close"
+    (click)="modalRef.close()"
+  ></button>
+</div>
+<div class="modal-body">
+  <div class="container">
+    <div class="row">
+      <div class="col-md">
+        <mdb-form-control>
+          <input mdbInput type="text" [(ngModel)]="newUser.username" id="name" name="name" class="form-control" />
+          <label mdbLabel class="form-label" for="name">Username</label>
+        </mdb-form-control>
+      </div>
+    </div>
+    <div class="row" style="padding-top: 30px">
+      <div class="col-md">
+        <mdb-form-control>
+          <input mdbInput type="password" id="firstname" class="form-control"  [(ngModel)]="newUser.password"/>
+          <label mdbLabel class="form-label" for="firstname">Password</label>
+        </mdb-form-control>
+      </div>
+      <div class="col-md">
+        <mdb-form-control>
+          <input mdbInput type="password" id="lastname" class="form-control"  [(ngModel)]="confirmPassword"/>
+          <label mdbLabel class="form-label" for="lastname">Confirm Password</label>
+        </mdb-form-control>
+      </div>
+    </div>
+    <div class="row" style="padding-top: 30px">
+      <div class="col-md">
+        <div class="form-check">
+          <input
+            mdbCheckbox
+            class="form-check-input"
+            type="checkbox"
+            id="flexCheckDefault"
+            [(ngModel)]="newUser.isAdmin"
+          />
+          <label class="form-check-label" for="flexCheckDefault">
+            Admin Account
+          </label>
+        </div>
+      </div>
+    </div>
+    <div class="row" style="padding-top: 30px">
+      <div class="col-md-8">
+        <p *ngIf="showError" style="color: red">Passwords must match</p>
+        <p *ngIf="missingFields" style="color: red">Missing Fields</p>
+      </div>
+    </div>
+  </div>
+
+</div>
+<div class="modal-footer">
+  <button type="button" class="btn btn-secondary" (click)="cancel()">
+    Cancel
+  </button>
+  <button type="button" class="btn btn-primary" (click)="save()">Create User</button>
+</div>

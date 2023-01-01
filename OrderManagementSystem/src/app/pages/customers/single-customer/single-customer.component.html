@@ -1,0 +1,50 @@
+<div class="center-table">
+  <div class="p-5 text-center bg-light">
+    <h1 class="mb-3">{{ customer.firstname }} {{ customer.lastname }}</h1>
+    <h4 class="mb-3">{{ customer.email }}</h4>
+<!--    <div class="p-5 text-center">-->
+<!--      <h4 class="mb-3">{{ order.customer.firstname }} {{ order.customer.lastname }}</h4>-->
+<!--      <h6 class="mb-3">${{ order.price }}</h6>-->
+<!--    </div>-->
+    <div class="center-table">
+      <h5 class="mb-3">Orders</h5>
+
+      <table class="table align-middle mb-0 bg-white">
+        <thead class="bg-light">
+        <tr>
+          <th>Order Number</th>
+          <th>Order Name</th>
+          <th>Price</th>
+          <th style="padding-left: 40px">Actions</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor="let order of customerOrders">
+          <td>
+            <div class="d-flex align-items-center">
+              <img
+                src="https://img.icons8.com/material/96/null/indent--v1.png"
+                alt=""
+                style="width: 40px; height: 40px"
+                class="rounded-circle"
+              />
+
+              <div class="ms-3">
+                <p class="fw-bold mb-1">#{{ order.id }} </p>
+              </div>
+            </div>
+          </td>
+          <td>{{ order.name }}</td>
+          <td>${{ order.price }}</td>
+          <td>
+            <button type="button" class="btn btn-link btn-sm btn-rounded" [routerLink]="['/orders', order.id]">
+              View Order
+            </button>
+          </td>
+        </tr>
+
+        </tbody>
+      </table>
+  </div>
+
+</div>

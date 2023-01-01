@@ -1,0 +1,20 @@
+<div class="center-table">
+  <div class="p-5 text-center bg-light">
+    <h1 class="mb-3"><img
+      [src]="user.icon"
+      alt=""
+      style=""
+      class="rounded-circle"
+    />{{ user.username }}</h1>
+<!--    <div *ngIf="user != false">-->
+      <h4 class="mb-3" *ngIf="user.isAdmin" style="padding-top: 5%">Administrator Account</h4>
+      <h4 class="mb-3" *ngIf="!user.isAdmin">User Account</h4>
+<!--    </div>-->
+    <!--    <div class="p-5 text-center">-->
+    <!--      <h4 class="mb-3">{{ order.customer.firstname }} {{ order.customer.lastname }}</h4>-->
+    <!--      <h6 class="mb-3">${{ order.price }}</h6>-->
+    <!--    </div>-->
+
+  </div>
+
+</div>

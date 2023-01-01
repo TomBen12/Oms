@@ -1,0 +1,33 @@
+/* You can add global styles to this file, and also import other style files */
+// Font Awesome
+@import "../node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss";
+@import "../node_modules/@fortawesome/fontawesome-free/scss/solid.scss";
+@import "../node_modules/@fortawesome/fontawesome-free/scss/regular.scss";
+@import "../node_modules/@fortawesome/fontawesome-free/scss/brands.scss";
+
+// MDB SCSS
+@import "../node_modules/mdb-angular-ui-kit/assets/scss/mdb.scss";
+.center-table {
+  padding-top: 10%;
+  padding-left: 10%;
+  width: 85%;
+}
+.center-small-table {
+  width: 70%;
+  padding-top: 100px;
+  padding-left: 550px;
+  //padding-right: 350px;
+}
+
+.center-medium-table {
+  width: 80%;
+  padding-top: 100px;
+  padding-left: 22%;
+}
+
+.add-button-position {
+
+  position: absolute;
+  bottom: 5%;
+  right: 5%;
+}

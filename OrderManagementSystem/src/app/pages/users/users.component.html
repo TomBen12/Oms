@@ -1,0 +1,58 @@
+<div class="p-5 text-center bg-light">
+  <h1 class="mb-3">Users</h1>
+<!--  <h4 class="mb-3">Subheading</h4>-->
+<!--  <a class="btn btn-primary" href="" role="button">Call to action</a>-->
+</div>
+
+<div class="center-medium-table">
+  <table class="table align-middle mb-0 bg-white">
+    <thead class="bg-light">
+    <tr>
+      <th>Username</th>
+      <th>Admin</th>
+      <th style="padding-left: 90px">Actions</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let user of users">
+      <td class="col-md-4">
+        <div class="d-flex align-items-center">
+          <img
+            [src]="user.icon"
+            alt=""
+            style="width: 40px; height: 40px"
+            class="rounded-circle"
+          />
+          <!--          <a href="https://www.vecteezy.com/vector-art/2318271-user-profile-icon">User Profile Icon Vectors by Vecteezy</a>-->
+          <div class="ms-3">
+            <p class="fw-bold mb-1">{{user.username}} </p>
+          </div>
+        </div>
+      </td>
+      <td class="col-md-4">
+      <div class="d-flex align-items-center">
+        <div class="ms-2" *ngIf="user">
+          <a *ngIf="user.isAdmin" style="font-weight: bold; color: springgreen" >{{user.isAdmin}}</a>
+          <a *ngIf="!user.isAdmin" style="font-weight: bold; color: black" >{{user.isAdmin}}</a>
+
+        </div>
+      </div>
+      </td>
+      <td class="col-md-4">
+        <button type="button" class="btn btn-link btn-sm btn-rounded" [routerLink]="['/users', user.id]">View User
+        </button>
+        <button type="button" class="btn btn-outline-danger btn-sm btn-rounded" (click)="deleteUser(user.id)">
+          Delete
+        </button>
+      </td>
+    </tr>
+    </tbody>
+  </table>
+
+  <div class="add-button-position">
+    <button type="button" class="btn btn-outline-primary btn-floating " style="width: 45px;height: 45px;" (click)="openCreateUserModal()">
+      <i class="fa-solid fa-plus"></i>
+    </button>
+  </div>
+
+</div>

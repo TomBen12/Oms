@@ -1,0 +1,53 @@
+<div class="container center-form">
+
+  <div class="row">
+    <h2 style="padding-left: 40%" *ngIf="!register">Login</h2>
+    <h2 style="padding-left: 40%" *ngIf="register">Register</h2>
+  </div>
+  <div class="row" style="padding-top: 30px">
+    <div class="col-md">
+
+      <mdb-form-control>
+        <input mdbInput type="text" [(ngModel)]="loginInfo.username" id="username"  class="form-control" />
+        <label mdbLabel class="form-label" for="username">Username</label>
+      </mdb-form-control>
+    </div>
+  </div>
+  <div class="row" style="padding-top: 30px">
+    <div class="col-md">
+      <mdb-form-control>
+        <input mdbInput type="password" id="password" class="form-control"  [(ngModel)]="loginInfo.password"/>
+        <label mdbLabel class="form-label" for="password">Password</label>
+      </mdb-form-control>
+    </div>
+  </div>
+  <div class="row" style="padding-top: 30px" *ngIf="register">
+    <div class="col-md">
+      <mdb-form-control>
+        <input mdbInput type="password" id="confirmpassword" class="form-control"  [(ngModel)]="confirmPassword"/>
+        <label mdbLabel class="form-label" for="password">Confirm Password</label>
+      </mdb-form-control>
+    </div>
+  </div>
+<!--  Login Register-->
+  <div class="row button-group" style="" *ngIf="!register">
+    <div class="col-md-8">
+      <button type="button" class="btn btn-primary" (click)="doLogin()">Login</button>
+      <button type="button" class="btn btn-link" style="padding-left: 30px" (click)="register = true">Register</button>
+    </div>
+  </div>
+  <div class="row button-group" style="" *ngIf="register">
+    <div class="col-md-8">
+      <button type="button" class="btn btn-primary" (click)="doRegistration()">Register</button>
+      <button type="button" class="btn btn-link" style="padding-left: 30px" (click)="register = false">Login</button>
+    </div>
+  </div>
+
+<!-- Error Validation -->
+  <div class="row button" style="padding-top: 30px; padding-left: 40%">
+    <div class="">
+      <p *ngIf="showError" style="color: red">Passwords must match</p>
+      <p *ngIf="missingFields" style="color: red">Missing Fields</p>
+    </div>
+  </div>
+</div>
