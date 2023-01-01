@@ -12,24 +12,6 @@ export class OrdersService {
   id: number = 4
 
   orders: Order[] = [
-    // {
-    //   id: 1,
-    //   name: '65" Samsung TV',
-    //   price: 799,
-    //   customerId: 11
-    // },
-    // {
-    //   id: 2,
-    //   customerId: 22,
-    //   name: 'Standing Desk',
-    //   price: 395
-    // },
-    // {
-    //   id: 3,
-    //   customerId: 33,
-    //   name: 'Live Love Laugh Poster',
-    //   price: 65
-    // },
   ]
 
   constructor(private customersService: CustomersService,
@@ -81,6 +63,12 @@ export class OrdersService {
     return new Promise<boolean>((resolve, reject) => {
       this.customersService.removeOrderFromCustomer(customerId, orderId).then(resp => {
         console.log('removeOrderFromCustomer ', resp);
+        this.api.deleteOrder(orderId).subscribe(resp => {
+          resolve(true)
+
+        })
+      }).catch( e => {
+        console.log('caught remove orderfromCustomer', e);
         this.api.deleteOrder(orderId).subscribe(resp => {
           resolve(true)
 

@@ -1,22 +1,18 @@
 ﻿<Properties StartupConfiguration="{7F63DB0A-7866-4C14-94F4-4F9681339172}|https">
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Models/Customer.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="web1.config">
     <Files>
       <File FileName="Properties/launchSettings.json" />
       <File FileName="Program.cs" />
       <File FileName="Models/IUser.cs" />
       <File FileName="Models/Order.cs" />
-      <File FileName="Models/Customer.cs" Line="11" Column="16" />
-      <File FileName="Controllers/CustomerController.cs" />
-      <File FileName="Controllers/OrderController.cs" />
-      <File FileName="Models/CustomerContext.cs" />
+      <File FileName="Models/Customer.cs" Line="19" Column="1" />
+      <File FileName="Controllers/CustomerController.cs" Line="1" Column="1" />
+      <File FileName="Controllers/OrderController.cs" Line="1" Column="1" />
+      <File FileName="Models/CustomerContext.cs" Line="1" Column="1" />
       <File FileName="Models/OrderContext.cs" />
       <File FileName="appsettings.json" />
+      <File FileName="Controllers/UserController.cs" Line="1" Column="1" />
+      <File FileName="web1.config" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -24,8 +20,6 @@
           <Node name="OrderManagementSystemApi" expanded="True" selected="True">
             <Node name="OrderManagementSystemApi" expanded="True">
               <Node name="Dependencies" expanded="True" />
-              <Node name="Controllers" expanded="True" />
-              <Node name="Models" expanded="True" />
               <Node name="Properties" expanded="True" />
             </Node>
           </Node>
@@ -33,5 +27,11 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
+  <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.ItemProperties.OrderManagementSystemApi PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
 </Properties>

@@ -194,10 +194,10 @@ export class CustomersService {
           this.api.addCustomer(customer).subscribe(r => {
             resolve(r)
           })
-
-
-
         })
+      }, error => {
+        console.log('getcustomer faield ', error);
+        reject(error)
       })
 
     })

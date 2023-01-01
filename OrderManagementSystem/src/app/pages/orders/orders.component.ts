@@ -20,11 +20,6 @@ export class OrdersComponent implements OnInit{
   constructor(private modalService: MdbModalService,
               public ordersService: OrdersService,
               public customersService: CustomersService) {
-    // this.customerRelatedToOrder = this.customersService.getCustomer(this.orders.customerId)
-
-    // this.ordersService.addDefaultOrders().then( r => {
-    //   this.refresh()
-    // })
   }
 
 
@@ -60,14 +55,6 @@ export class OrdersComponent implements OnInit{
   }
 
   deleteOrder(orderId: number, customerId: number) {
-
-    console.log('deleteOrder orderId', orderId);
-    console.log('deleteOrder customerId', customerId);
-
-    // setTimeout(() => {git c
-    //   this.refresh()
-    // }, 5000)
-
     this.ordersService.deleteOrder(orderId, customerId).then((r) => {
       console.log('delete order resp ', r);
       this.refresh()

@@ -1,3 +1,3 @@
 ﻿<Project>
-  <Import Project="../build/OrderManagementSystemApi.props" />
+  <Import Project="..\build\OrderManagementSystemApi.props" />
 </Project>

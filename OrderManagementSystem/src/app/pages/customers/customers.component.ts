@@ -15,7 +15,6 @@ export class CustomersComponent {
 
   constructor(public customersService: CustomersService,
               private modalService: MdbModalService) {
-    // this.customersService.setDefaultCustomers()
   }
 
   ngOnInit() {

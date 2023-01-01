@@ -4,16 +4,19 @@ import {Order} from "../../types/order.type.ts";
 import {Observable} from "rxjs";
 import {User} from "../../types/user.type.ts";
 import {Customer} from "../../types/customer.type.ts";
+import {ApiLib} from "./lib/api-lib";
 
 @Injectable({
   providedIn: 'root'
 })
-export class ApiService {
+export class ApiService extends ApiLib{
 
   url = 'http://localhost:5125/api'
 
   body = {}
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient) {
+    super()
+  }
 
 
   /**

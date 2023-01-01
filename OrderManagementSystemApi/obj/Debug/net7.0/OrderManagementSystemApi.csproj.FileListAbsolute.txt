@@ -612,9 +612,6 @@ C:/Users/Eliran/PhpstormProjects/oms/OrderManagementSystemApi/bin/Debug/net7.0/S
 C:/Users/Eliran/PhpstormProjects/oms/OrderManagementSystemApi/bin/Debug/net7.0/System.Web.Http.dll
 C:/Users/Eliran/PhpstormProjects/oms/OrderManagementSystemApi/bin/Debug/net7.0/System.Web.Http.Cors.dll
 C:/Users/Eliran/PhpstormProjects/oms/OrderManagementSystemApi/bin/Debug/net7.0/Newtonsoft.Json.Bson.dll
-/Users/tom/Projects/oms/OrderManagementSystemApi/bin/Debug/net7.0/web1.config
-/Users/tom/Projects/oms/OrderManagementSystemApi/bin/Debug/net7.0/System.Web.Cors.dll
-/Users/tom/Projects/oms/OrderManagementSystemApi/bin/Debug/net7.0/System.Net.Http.Formatting.dll
-/Users/tom/Projects/oms/OrderManagementSystemApi/bin/Debug/net7.0/System.Web.Http.dll
-/Users/tom/Projects/oms/OrderManagementSystemApi/bin/Debug/net7.0/System.Web.Http.Cors.dll
-/Users/tom/Projects/oms/OrderManagementSystemApi/bin/Debug/net7.0/Newtonsoft.Json.Bson.dll
+/Users/tom/Documents/Oms-project/OrderManagementSystemApi/obj/Debug/net7.0/OrderManagementSystemApi.dll
+/Users/tom/Documents/Oms-project/OrderManagementSystemApi/obj/Debug/net7.0/refint/OrderManagementSystemApi.dll
+/Users/tom/Documents/Oms-project/OrderManagementSystemApi/obj/Debug/net7.0/OrderManagementSystemApi.pdb
