@@ -20,6 +20,7 @@ Run `ng serve` for client side to run, and `dotnet watch` in the api folder to l
  - @angular-devkit/core            15.0.4
  - rxjs                            7.5.7
  - typescript                      4.8.4
+ - .Net 7.0.101
 
 ## Known Errors
 - If console shows cors error, clear cache and refresh page
