@@ -6,7 +6,7 @@ this information in tables. User creation also has basic validation
 ## Usage
 Register to login. Then create a Customer. Orders can now be created for that customer 
 
-##Notes
+## Notes
 If console throws CORS error, refresh page and clear cache by holding shift and clicking refresh page in chrome
 
 ## Limitations
